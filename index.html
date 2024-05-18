@@ -6,27 +6,21 @@
     <title>Formulario de cadastro</title>
 </head>
 <body>
-    <form action="">
-        <label>Text:</label><input type="text"> <br>
-        <label>Number:</label><input type="number" min="0" max="10"><br>
-        <label>Button:</label><input type="button" value="Enviar"><br>
-        <label>Range</label><input type="range" min="0" max="10"><br>
-        <label>Color:</label><input type="color"><br>
-        <label>Email:</label><input type="email"><br>
-        <label>URL:</label><input type="url"><br>
-        <label>Date:</label><input type="date"><br>
-        <label>Week:</label><input type="week"><br>
-        <label>Month:</label><input type="month"><br>
-        <label>Checkbox:</label><input type="checkbox"><br>
-        <label>Radio:</label><input type="radio" name="aceita"><br>
-        <label>Hidden:</label><input type="hidden"><br>
-        <label>File:</label><input type="file" multiple><br>
-        <label>Search</label><input type="search">
+    <form onsubmit="" method="get">
+        <label>Nome*</label><input type="text" name="name"><br>
+        <label>Cargo*</label>
+        <select name="role">
+        <option value="">selecione o cargo<option>
+        <option value="Administrativo">Administrativo<option>
+        <option selected="gerente">gerente<option>
+        <option value="diretor">diretor<option></option>
+        </select>
+        <br>
+        <label>Assunto*</label><input type="text" name="Assunto"><br>
+        <label for="">Mensagem</label>
+        <textarea rows="10" cols="50" name="message" id="">Mensagem</textarea>
 
-
-
-
-
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
