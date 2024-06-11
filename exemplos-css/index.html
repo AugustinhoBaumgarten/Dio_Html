@@ -5,31 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilha de CSS</title>
     <style>
-        h1{
-            background: darkblue;
-            color: lightgreen;
-        }
-        div{
-            background: lightblue;
-            color: darkblue;
-        }
-        li{
-            background: lightgreen;
+        *{
+            font-weight: bold;
         }
 
+
+        .seletores-mais-comuns{
+            color: red;
+        }
+        .texto-maiusculo{
+            text-transform: uppercase;
+        }
+
+   [href$="browse"]{
+    background: green;
+
+   }
     </style>
 </head>
 <body>
-    <h1>Seletores css</h1>
-    <p>Bem vindos</p>
-    <p>No css nós possuimos os seletores por ID</p>
     <div>
         <ul>
-            <li><b>Seletor por Tipo: </b> Busca elementos por uma tag HTML especifica</li>
-            <li><b>Seletor por ID: </b> Busca elementos através do atributo "id"</li>
-            <li><b>Seletor por Classe: </b> Busca elementos através do atributo "class"</li>
-            <li><b>Seletor Universal: </b> Seleciona todos elementos HTML </li>
-            <li><b>Seletor de Atributo: </b> Seleciona elementos que possuem atributo</li>
+            <li>
+                <a title="Netflix" href="https://www.netflix.com/browse">Netflix</a>
+            </li>
+            <li>
+                <a title="prime Netflix" href="https://www.primevideo.com/offers/nonprimehomepage/ref=dvm_pds_amz_br_dc_s_g_mkw_saMKQNw0D-dc_pcrid_620438871494?gclid=Cj0KCQjwpZWzBhC0ARIsACvjWRPiU-uF0bemNC8A8Eyl1x6cMCrS5yUoP63QXcKMZIxFE17QvdUumwQaAlXFEALw_wcB&mrntrk=slid__pgrid_62046161446_pgeo_9102248_x__adext__ptid_kwd-63462956296">Prime video</a>
+            </li>
+            <li>
+                <a title="Disney" href="https://www.disneyplus.com/pt-br/home">Disney plus</a>
+            </li>
+        </ul>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1>Seletores css</h1>
+    <p id="texto-boas-vindas">Bem vindos</p>
+    <p id="explicacao-seletores">No css nós possuimos os seletores por ID</p>
+    <div>
+        <ul>
+            <li class="seletores-mais-comuns texto-maiusculo"><b>Seletor por Tipo: </b> Busca elementos por uma tag HTML especifica</li>
+            <li class="seletores-mais-comuns texto-maiusculo"><b>Seletor por ID(#): </b> Busca elementos através do atributo "id"</li>
+            <li class="seletores-mais-comuns"><b>Seletor por Classe(.): </b> Busca elementos através do atributo "class"</li>
+            <li><b>Seletor Universal(*): </b> Seleciona todos elementos HTML </li>
+            <li class="texto-maiusculo"><b>Seletor de Atributo: </b> Seleciona elementos que possuem atributo</li>
 
         </ul>
     </div>
