@@ -4,76 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilha de CSS</title>
-    <style>
 
-        div{
-            width: 200px;
-            height: 300px;
-            border: 5px solid blue;
-        }
-            img{
-                width: 100%;
-                height: 100%;
-
-            }
-  /*   #contain{
-        object-fit:contain
-     }
-
-     #cover {
-        object-fit:cover;
-     }
-
-     #none{
-        object-fit: none;
-     }
-
-     #scale-down{
-        object-fit: scale-down
-     }*/
-        
-     img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 30px 40px;
-
-     }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>propriedade <code>Object-fit</code></h1>
-    
-    <code>object-fit: fill;</code>(padrão)
-    <div>
-        <img src="https://i1.wp.com/guiadoanime.com.br/wp-content/uploads/2024/01/Dio-Cosplay-de-JoJos-Bizarre-Adventure-deixa-o-vilao-mais.jpg" alt="" id="fill">
-    </div>
-    <br>
-    <code>object-fit: contain;</code>
-    <div>
-        <img src="https://i1.wp.com/guiadoanime.com.br/wp-content/uploads/2024/01/Dio-Cosplay-de-JoJos-Bizarre-Adventure-deixa-o-vilao-mais.jpg" alt="" id="contain">
+    <code>background-size: auto;</code>
+    <div class="exemplo">
     </div>
 
-    <br>
-
-    <code>object-fit: cover;</code>
-    <div>
-        <img src="https://i1.wp.com/guiadoanime.com.br/wp-content/uploads/2024/01/Dio-Cosplay-de-JoJos-Bizarre-Adventure-deixa-o-vilao-mais.jpg" alt="" id="cover">
+    <code>background-size: cover;</code>
+    <div id="cover" class="exemplo">
     </div>
 
-    <br>
-
-    <code>object-fit: none;</code>
-    <div>
-        <img src="https://i1.wp.com/guiadoanime.com.br/wp-content/uploads/2024/01/Dio-Cosplay-de-JoJos-Bizarre-Adventure-deixa-o-vilao-mais.jpg" alt="" id="none">
+    <code>background-size: contain;</code>
+    <div id="contain" class="exemplo">
     </div>
 
-    <br>
-
-    <code>object-fit: scale-down;</code>
-    <div>
-        <img src="https://i1.wp.com/guiadoanime.com.br/wp-content/uploads/2024/01/Dio-Cosplay-de-JoJos-Bizarre-Adventure-deixa-o-vilao-mais.jpg" alt="" id="scale-down">
+    <code>background-size: valor;</code>
+    <div id="tamanho" class="exemplo">
     </div>
 
+    <code>background-size: <i> valor-1 valor</i>;</code>
+    <div id="exemplo-x-y" class="exemplo" >
+    </div>
+
+    <code>background-size: <i> valor-1 valor, camada -2</i>;</code>
+    <div id="exemplo-camadas" class="exemplo" >
+    </div>
 </body>
 </html>
