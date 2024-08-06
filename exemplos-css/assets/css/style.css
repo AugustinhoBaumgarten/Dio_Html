@@ -1,5 +1,10 @@
 @import url('imagem1.webp');
 
+
+body{
+    height: 200vh;
+}
+
 div{
     margin-bottom: 30px;
 }
@@ -8,11 +13,18 @@ div{
     width: 300px;
     height: 300px;
     background-image: url('imagem1.webp'),url('imagem1.webp');
+<<<<<<< HEAD
     background-image: cover;
     border: 15px dashed red;
     overflow: auto;
     
 
+=======
+    background-size: 120px;
+    border: 1px solid red;
+    background-repeat: no-repeat;
+    overflow: auto;
+>>>>>>> 7b4c3fb7b53935c45cc6962df420f4b3a6953ec1
 }
 
 
@@ -36,3 +48,26 @@ div{
     background-size: contain, cover;
 }
 
+<<<<<<< HEAD
+=======
+#repeat-x{
+    background-repeat: repeat-x;
+}
+
+#repeat-y{
+    background-repeat: repeat-y;
+}
+
+#space{
+    background-repeat: space;
+}
+
+
+#round{
+    background-repeat: round;
+}
+
+#round{
+    background-repeat: no-repeat;
+}
+>>>>>>> 7b4c3fb7b53935c45cc6962df420f4b3a6953ec1
